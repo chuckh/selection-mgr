@@ -1,11 +1,11 @@
 {
-  "name": "selection-manager",
-  "homepage": "https://github.com/miztroh/selection-manager",
+  "name": "selection-mgr",
+  "homepage": "https://github.com/miztroh/selection-mgr",
   "authors": [
     "Jonathan Cox <miztroh@gmail.com>"
   ],
   "description": "Use this element with the contenteditable attribute to manage (save, restore, observe) document selection",
-  "main": "selection-manager.html",
+  "main": "selection-mgr.html",
   "moduleType": [],
   "keywords": [
     "polymer",
