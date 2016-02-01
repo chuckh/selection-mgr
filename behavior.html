@@ -178,6 +178,14 @@
 			selection.addRange(range);
 			this.async(this.updateSelection, 10);
 		},
+		selectAll: function () {
+			var selection = this.getSelection();
+			selection.removeAllRanges();
+			var range = document.createRange();
+			range.selectNodeContents(this.target);
+			selection.addRange(range);
+			this.async(this.updateSelection, 10);
+		},
 		updateSelection: function (event) {
 			var selection = this.getSelection();
 
