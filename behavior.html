@@ -189,7 +189,7 @@
 		updateSelection: function (event) {
 			var selection = this.getSelection();
 
-			if (selection.anchorNode && this.target.contains(selection.anchorNode)) {
+			if (selection.anchorNode && this.target.contains(selection.anchorNode.nodeType === 1 ? selection.anchorNode : selection.anchorNode.parentNode)) {
 				this._setAnchorNode(selection.anchorNode);
 				this._setAnchorOffset(selection.anchorOffset);
 				this._setBaseNode(selection.baseNode);
