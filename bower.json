@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#latest"
+    "polymer": "polymer/polymer#latest",
+    "keyboardevent-key-polyfill": "cvan/keyboardevent-key-polyfill#latest"
   }
 }

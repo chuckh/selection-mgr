@@ -1,4 +1,7 @@
+<script src="../keyboardevent-key-polyfill/index.js"></script>
 <script>
+  keyboardeventKeyPolyfill.polyfill();
+
 	SelectionMgrBehavior = {
 		properties: {
 			anchorNode: {
@@ -235,7 +238,7 @@
 			//Allow input without alt, ctrl, or meta
 			if (!event.altKey && !event.ctrlKey && !event.metaKey) return;
 			//Allow select all, refresh, print, and paste
-			if (!event.altKey && !event.shiftKey && ['KeyA', 'KeyR', 'KeyP', 'KeyV'].indexOf(event.code) >= 0 && (event.ctrlKey || event.metaKey)) return;
+			if (!event.altKey && !event.shiftKey && ['a', 'r', 'p', 'v'].indexOf(event.key) >= 0 && (event.ctrlKey || event.metaKey)) return;
 			event.preventDefault();
 		},
 		_targetChanged: function () {}
